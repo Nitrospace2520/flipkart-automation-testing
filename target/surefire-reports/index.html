@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-FlipkartAutomationSuite" class="navigator-link">
+              <span class="suite-name border-passed">FlipkartAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>C:\Users\nirma\eclipse-workspace\FlipkartAutomationFrameworkTesting\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-FlipkartAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-FlipkartAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FlipkartAutomationSuite" class="hide-methods passed suite-FlipkartAutomationSuite"> (hide)</a> <!-- hide-methods passed suite-FlipkartAutomationSuite -->
+                      <a href="#" panel-name="suite-FlipkartAutomationSuite" class="show-methods passed suite-FlipkartAutomationSuite"> (show)</a> <!-- show-methods passed suite-FlipkartAutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-FlipkartAutomationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidOtpShouldFail">invalidOtpShouldFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidPhoneShouldFail">invalidPhoneShouldFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testFilterByBrand">testFilterByBrand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testFilterByPrice">testFilterByPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testFilterByRAM">testFilterByRAM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testModifyQuantity">testModifyQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testOrderWithoutAddressPayment">testOrderWithoutAddressPayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testProceedToBuy">testProceedToBuy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testProductDetails">testProductDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testRemoveItem">testRemoveItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testSearchProduct">testSearchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testSearchWithoutKeyword">testSearchWithoutKeyword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlipkartAutomationSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validOtpShouldPass">validOtpShouldPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FlipkartAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FlipkartAutomationSuite" class="panel FlipkartAutomationSuite">
+          <div class="suite-FlipkartAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidOtpShouldFail">
+                  </a> <!-- invalidOtpShouldFail -->
+                  <span class="method-name">invalidOtpShouldFail</span>
+                  <em>
+(Should fail if OTP entered is invalid)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPhoneShouldFail">
+                  </a> <!-- invalidPhoneShouldFail -->
+                  <span class="method-name">invalidPhoneShouldFail</span>
+                  <em>
+(Should fail if phone number is invalid)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validOtpShouldPass">
+                  </a> <!-- validOtpShouldPass -->
+                  <span class="method-name">validOtpShouldPass</span>
+                  <em>
+(Should pass if OTP is valid)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FlipkartAutomationSuite-class-passed -->
+          <div class="suite-FlipkartAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFilterByBrand">
+                  </a> <!-- testFilterByBrand -->
+                  <span class="method-name">testFilterByBrand</span>
+                  <em>
+(Apply brand filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFilterByPrice">
+                  </a> <!-- testFilterByPrice -->
+                  <span class="method-name">testFilterByPrice</span>
+                  <em>
+(Apply price range filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFilterByRAM">
+                  </a> <!-- testFilterByRAM -->
+                  <span class="method-name">testFilterByRAM</span>
+                  <em>
+(Apply RAM filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductDetails">
+                  </a> <!-- testProductDetails -->
+                  <span class="method-name">testProductDetails</span>
+                  <em>
+(Open product details page and check specifications)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProduct">
+                  </a> <!-- testSearchProduct -->
+                  <span class="method-name">testSearchProduct</span>
+                  <em>
+(Search for mobile phone)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchWithoutKeyword">
+                  </a> <!-- testSearchWithoutKeyword -->
+                  <span class="method-name">testSearchWithoutKeyword</span>
+                  <em>
+(Search without keyword)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceLowToHigh">
+                  </a> <!-- testSortByPriceLowToHigh -->
+                  <span class="method-name">testSortByPriceLowToHigh</span>
+                  <em>
+(Sort results by price low to high)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FlipkartAutomationSuite-class-passed -->
+          <div class="suite-FlipkartAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                  <em>
+(Add product to cart from details page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModifyQuantity">
+                  </a> <!-- testModifyQuantity -->
+                  <span class="method-name">testModifyQuantity</span>
+                  <em>
+(Modify quantity in cart and verify price update)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderWithoutAddressPayment">
+                  </a> <!-- testOrderWithoutAddressPayment -->
+                  <span class="method-name">testOrderWithoutAddressPayment</span>
+                  <em>
+(Try placing order without address or payment)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProceedToBuy">
+                  </a> <!-- testProceedToBuy -->
+                  <span class="method-name">testProceedToBuy</span>
+                  <em>
+(Proceed to buy and check address/payment steps)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveItem">
+                  </a> <!-- testRemoveItem -->
+                  <span class="method-name">testRemoveItem</span>
+                  <em>
+(Remove item from cart and confirm removal)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FlipkartAutomationSuite-class-passed -->
+        </div> <!-- panel FlipkartAutomationSuite -->
+        <div panel-name="test-xml-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\nirma\eclipse-workspace\FlipkartAutomationFrameworkTesting\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;FlipkartAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;reporting.ExtentTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Flipkart Tests - Chrome&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.ProductTest&quot;/&gt;
+      &lt;class name=&quot;tests.CartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Flipkart Tests - Chrome --&gt;
+&lt;/suite&gt; &lt;!-- FlipkartAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FlipkartAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Flipkart Tests - Chrome (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FlipkartAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FlipkartAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FlipkartAutomationSuite');
+function tableData_FlipkartAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validOtpShouldPass')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 34605);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidOtpShouldFail')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 21522);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAddToCart')
+data.setCell(2, 2, 'tests.CartTest')
+data.setCell(2, 3, 19096);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testProceedToBuy')
+data.setCell(3, 2, 'tests.CartTest')
+data.setCell(3, 3, 12833);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidPhoneShouldFail')
+data.setCell(4, 2, 'tests.LoginTest')
+data.setCell(4, 3, 12308);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testModifyQuantity')
+data.setCell(5, 2, 'tests.CartTest')
+data.setCell(5, 3, 5243);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSearchProduct')
+data.setCell(6, 2, 'tests.ProductTest')
+data.setCell(6, 3, 4376);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testProductDetails')
+data.setCell(7, 2, 'tests.ProductTest')
+data.setCell(7, 3, 2757);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testOrderWithoutAddressPayment')
+data.setCell(8, 2, 'tests.CartTest')
+data.setCell(8, 3, 2291);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testFilterByRAM')
+data.setCell(9, 2, 'tests.ProductTest')
+data.setCell(9, 3, 576);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testFilterByBrand')
+data.setCell(10, 2, 'tests.ProductTest')
+data.setCell(10, 3, 453);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testFilterByPrice')
+data.setCell(11, 2, 'tests.ProductTest')
+data.setCell(11, 3, 446);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testRemoveItem')
+data.setCell(12, 2, 'tests.CartTest')
+data.setCell(12, 3, 373);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSortByPriceLowToHigh')
+data.setCell(13, 2, 'tests.ProductTest')
+data.setCell(13, 3, 251);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSearchWithoutKeyword')
+data.setCell(14, 2, 'tests.ProductTest')
+data.setCell(14, 3, 123);
+window.suiteTableData['FlipkartAutomationSuite']= { tableData: data, tableDiv: 'times-div-FlipkartAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-FlipkartAutomationSuite">
+              </div> <!-- times-div-FlipkartAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FlipkartAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FlipkartAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">resetState</span>
+                <span class="method-start">6264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPhoneShouldFail</span>
+                <span class="method-start">16283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">resetState</span>
+                <span class="method-start">28600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidOtpShouldFail</span>
+                <span class="method-start">38662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">resetState</span>
+                <span class="method-start">60188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validOtpShouldPass</span>
+                <span class="method-start">70247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">104856 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">105341 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSearchProduct</span>
+                <span class="method-start">111138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">115515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testFilterByBrand</span>
+                <span class="method-start">122532 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">122986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testFilterByRAM</span>
+                <span class="method-start">130001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">130578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testFilterByPrice</span>
+                <span class="method-start">137585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">138032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSortByPriceLowToHigh</span>
+                <span class="method-start">145042 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">145294 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testProductDetails</span>
+                <span class="method-start">152297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">155055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSearchWithoutKeyword</span>
+                <span class="method-start">162067 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">waitAfterEachTest</span>
+                <span class="method-start">162190 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">169203 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">169498 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">174522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModifyQuantity</span>
+                <span class="method-start">193619 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveItem</span>
+                <span class="method-start">198863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProceedToBuy</span>
+                <span class="method-start">199239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOrderWithoutAddressPayment</span>
+                <span class="method-start">212072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214364 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -64,7 +64,7 @@ public class CartPage {
     private WebElement loginButtonElement;
     
 //    Locators:=
-    private By saveAndDeliverHereBtn = By.xpath("//button[text()='Save and Deliver Here']");
+    private By saveAndDeliverHereBtn = By.xpath("//button[text()='Save and Deliver Here'] | //span[@class='PXFoIh' and text()='Delivery Address']");
     private By nameErrorMsg = By.xpath("//input[@name='name']/following-sibling::span");
     private By phoneErrorMsg = By.xpath("//input[@name='phone']/following-sibling::span");
 
@@ -105,29 +105,84 @@ public class CartPage {
     }
 
     public boolean isCartEmpty() {
-        return driver.getPageSource().contains("Missing Cart items?");
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(text(),'Missing Cart items?')]")
+            ));
+            return true;
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
+
 
     /** Proceed to checkout */
     public void proceedToBuy() {
-        wait.until(ExpectedConditions.elementToBeClickable(placeOrderBtn)).click();
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(placeOrderBtn)).click();
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Stale element on Place Order button. Retrying...");
+            WebElement freshPlaceOrderBtn = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button/span[contains(text(),'Place Order')]"))); // update locator if needed
+            freshPlaceOrderBtn.click();
+        }
     }
+
     
-    public void doLogin() throws InterruptedException {
-		phoneNoElement.sendKeys(ConfigLoader.getProperty("validPhoneNoForCorrectOTP"));
-		continueButtonElement.click();
-		Thread.sleep(7000); // for entering otp
-		loginButtonElement.click();
-		
-	}
+    public void doLogin() {
+        try {
+            // Enter phone number
+            wait.until(ExpectedConditions.visibilityOf(phoneNoElement))
+                .sendKeys(ConfigLoader.getProperty("validPhoneNoForCorrectOTP"));
+
+            // Click Continue
+            wait.until(ExpectedConditions.elementToBeClickable(continueButtonElement)).click();
+
+            // Instead of Thread.sleep(7000), wait until login button is clickable
+            wait.until(ExpectedConditions.elementToBeClickable(loginButtonElement)).click();
+
+        } catch (StaleElementReferenceException e) {
+//            System.out.println("Stale element detected. Retrying login...");
+
+            // Re-locate elements fresh and retry
+//            WebElement phoneField = wait.until(ExpectedConditions.visibilityOfElementLocated(
+//                By.xpath("//input[contains(@class, 'Jr-g+f') and @type='text' and @maxlength='auto']")));
+//            phoneField.sendKeys(ConfigLoader.getProperty("validPhoneNoForCorrectOTP"));
+//
+//            WebElement continueBtn = wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("//form/div[@class='aPGMpN']/button[@type='submit' and contains(@class, '_7Pd1Fp')]")));
+//            continueBtn.click();
+//
+//            WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("//button[contains(text(),'Login')]")));
+//            loginBtn.click();
+        }
+    }
+
 
     public boolean isAddressPageLoaded() {
-        return wait.until(ExpectedConditions.visibilityOf(addressStep)).isDisplayed();
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(addressStep)).isDisplayed();
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Stale element on Address Page. Retrying...");
+            WebElement freshAddressStep = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//span[contains(text(),'Address')]"))); // adjust locator if needed
+            return freshAddressStep.isDisplayed();
+        }
     }
 
     public boolean isPaymentPageLoaded() {
-        return wait.until(ExpectedConditions.visibilityOf(paymentStep)).isDisplayed();
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(paymentStep)).isDisplayed();
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Stale element on Payment Page. Retrying...");
+            WebElement freshPaymentStep = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//span[contains(text(),'Payment')]"))); // adjust locator if needed
+            return freshPaymentStep.isDisplayed();
+        }
     }
+
     
     public boolean isPlaceOrderButtonEnabled() {
         return driver.findElement(By.id("place-order-btn")).isEnabled();

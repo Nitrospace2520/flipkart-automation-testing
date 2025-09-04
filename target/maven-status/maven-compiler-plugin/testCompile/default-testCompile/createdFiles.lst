@@ -1,0 +1,5 @@
+tests\CartTest.class
+FlipkartAutomationFramework\FlipkartAutomationFrameworkTesting\AppTest.class
+tests\LoginTest.class
+tests\ProductTest.class
+runners\TestSuiteRunner.class

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-04T12:32:57 IST" name="FlipkartAutomationSuite" finished-at="2025-09-04T12:36:32 IST" duration-ms="214732">
+    <groups>
+    </groups>
+    <test started-at="2025-09-04T12:32:57 IST" name="Flipkart Tests - Chrome" finished-at="2025-09-04T12:36:32 IST" duration-ms="214732">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:32:57 IST" name="setUp" finished-at="2025-09-04T12:33:04 IST" duration-ms="6249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="resetState()[pri:0, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:33:04 IST" name="resetState" finished-at="2025-09-04T12:33:14 IST" duration-ms="10018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetState -->
+        <test-method signature="invalidPhoneShouldFail()[pri:1, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:33:14 IST" name="invalidPhoneShouldFail" description="Should fail if phone number is invalid" finished-at="2025-09-04T12:33:26 IST" duration-ms="12308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPhoneShouldFail -->
+        <test-method is-config="true" signature="resetState()[pri:0, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:33:26 IST" name="resetState" finished-at="2025-09-04T12:33:36 IST" duration-ms="10062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetState -->
+        <test-method signature="invalidOtpShouldFail()[pri:2, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:33:36 IST" name="invalidOtpShouldFail" description="Should fail if OTP entered is invalid" finished-at="2025-09-04T12:33:57 IST" duration-ms="21522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidOtpShouldFail -->
+        <test-method is-config="true" signature="resetState()[pri:0, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:33:57 IST" name="resetState" finished-at="2025-09-04T12:34:08 IST" duration-ms="10059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetState -->
+        <test-method signature="validOtpShouldPass()[pri:3, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:34:08 IST" name="validOtpShouldPass" description="Should pass if OTP is valid" finished-at="2025-09-04T12:34:42 IST" duration-ms="34605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validOtpShouldPass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@14fc5f04]" started-at="2025-09-04T12:34:42 IST" name="tearDown" finished-at="2025-09-04T12:34:43 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:35:47 IST" name="setUp" finished-at="2025-09-04T12:35:52 IST" duration-ms="5024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart()[pri:1, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:35:52 IST" name="testAddToCart" description="Add product to cart from details page" finished-at="2025-09-04T12:36:11 IST" duration-ms="19096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method signature="testModifyQuantity()[pri:2, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:36:11 IST" name="testModifyQuantity" description="Modify quantity in cart and verify price update" finished-at="2025-09-04T12:36:16 IST" duration-ms="5243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModifyQuantity -->
+        <test-method signature="testRemoveItem()[pri:3, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:36:16 IST" name="testRemoveItem" description="Remove item from cart and confirm removal" finished-at="2025-09-04T12:36:17 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveItem -->
+        <test-method signature="testProceedToBuy()[pri:4, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:36:17 IST" name="testProceedToBuy" description="Proceed to buy and check address/payment steps" finished-at="2025-09-04T12:36:29 IST" duration-ms="12833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProceedToBuy -->
+        <test-method signature="testOrderWithoutAddressPayment()[pri:5, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:36:29 IST" name="testOrderWithoutAddressPayment" description="Try placing order without address or payment" finished-at="2025-09-04T12:36:32 IST" duration-ms="2291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderWithoutAddressPayment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@dc7df28]" started-at="2025-09-04T12:36:32 IST" name="tearDown" finished-at="2025-09-04T12:36:32 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:34:43 IST" name="setUp" finished-at="2025-09-04T12:34:48 IST" duration-ms="5796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchProduct()[pri:1, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:34:48 IST" name="testSearchProduct" description="Search for mobile phone" finished-at="2025-09-04T12:34:53 IST" duration-ms="4376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchProduct -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:34:53 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:00 IST" duration-ms="7013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testFilterByBrand()[pri:2, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:00 IST" name="testFilterByBrand" description="Apply brand filter" finished-at="2025-09-04T12:35:00 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterByBrand -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:00 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:07 IST" duration-ms="7013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testFilterByRAM()[pri:3, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:07 IST" name="testFilterByRAM" description="Apply RAM filter" finished-at="2025-09-04T12:35:08 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterByRAM -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:08 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:15 IST" duration-ms="7003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testFilterByPrice()[pri:4, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:15 IST" name="testFilterByPrice" description="Apply price range filter" finished-at="2025-09-04T12:35:15 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterByPrice -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:15 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:22 IST" duration-ms="7010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testSortByPriceLowToHigh()[pri:5, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:22 IST" name="testSortByPriceLowToHigh" description="Sort results by price low to high" finished-at="2025-09-04T12:35:23 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortByPriceLowToHigh -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:23 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:30 IST" duration-ms="7003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testProductDetails()[pri:6, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:30 IST" name="testProductDetails" description="Open product details page and check specifications" finished-at="2025-09-04T12:35:32 IST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetails -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:32 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:39 IST" duration-ms="7011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method signature="testSearchWithoutKeyword()[pri:7, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:39 IST" name="testSearchWithoutKeyword" description="Search without keyword" finished-at="2025-09-04T12:35:39 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithoutKeyword -->
+        <test-method is-config="true" signature="waitAfterEachTest()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:39 IST" name="waitAfterEachTest" finished-at="2025-09-04T12:35:46 IST" duration-ms="7012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitAfterEachTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55de24cc]" started-at="2025-09-04T12:35:46 IST" name="tearDown" finished-at="2025-09-04T12:35:47 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductTest -->
+    </test> <!-- Flipkart Tests - Chrome -->
+  </suite> <!-- FlipkartAutomationSuite -->
+</testng-results>

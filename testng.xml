@@ -9,7 +9,7 @@
     <test name="Flipkart Tests - Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="tests.LoginTest"/>
+           <class name="tests.LoginTest"/>
             <class name="tests.ProductTest"/>
             <class name="tests.CartTest"/>
         </classes>

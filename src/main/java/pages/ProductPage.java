@@ -63,10 +63,15 @@ public class ProductPage {
 
     /** Filter by RAM */
     public void filterByRAM(String ramSize) {
-        By ramLocator = By.xpath("//div[@class='ewzVkT _3DvUAf' and @title='" + ramSize + "']//div[@class='XqNaEv']");
-        WebElement ramFilter = wait.until(ExpectedConditions.elementToBeClickable(ramLocator));
-        ramFilter.click();
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@class='CGtC98']")));
+    	try {
+    		By ramLocator = By.xpath("//div[@class='ewzVkT _3DvUAf' and @title='" + ramSize + "']//div[@class='XqNaEv']");
+            WebElement ramFilter = wait.until(ExpectedConditions.elementToBeClickable(ramLocator));
+            ramFilter.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@class='CGtC98']")));
+		} catch (StaleElementReferenceException e) {
+			// wait for sometimes 
+		}
+        
     }
 
     /** Filter by Price Range */

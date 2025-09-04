@@ -10,27 +10,11 @@
       <class name="tests.ProductTest">
         <methods>
           <include name="setUp"/>
-          <include name="testSearchProduct"/>
           <include name="waitAfterEachTest"/>
           <include name="tearDown"/>
+          <include name="testFilterByRAM"/>
         </methods>
       </class> <!-- tests.ProductTest -->
-      <class name="tests.CartTest">
-        <methods>
-          <include name="testProceedToBuy"/>
-          <include name="setUp"/>
-          <include name="testOrderWithoutAddressPayment"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- tests.CartTest -->
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="validOtpShouldPass"/>
-          <include name="resetState"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Flipkart Tests - Chrome(failed) -->
 </suite> <!-- Failed suite [FlipkartAutomationSuite] -->
